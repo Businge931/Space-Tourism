@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;300;400;600&family=Bellefair&display=swap");
+
+.header {
+  color: #d0d6f9;
+  display: flex;
+  align-items: center;
+  top: 5%;
+  margin-top: 1.2rem;
+  justify-content: space-between;
+  z-index: 10;
+}
+.header_logo {
+  height: 3rem;
+  width: 3rem;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2rem;
+}
+.header_line {
+  position: absolute;
+  height: 0.5px;
+  width: 24rem;
+  background-color: #ffffff1c;
+  left: 14%;
+}
+.header_links {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  width: 60%;
+  gap: 3.5rem;
+  background-color: #97979746;
+}
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: auto;
+  /* border-bottom: 2px solid white; */
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 300;
+  cursor: pointer;
+}
+.link:hover {
+  border-bottom: 2px solid #d0d6f9;
+  /* box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; */
+  /* outline: 2px solid #d0d6f9; */
+  outline-offset: -2px;
+  /* transition: all 0.5s ease-out; */
+}
+.link span {
+  color: white;
+  font-weight: 400;
+}
+#home {
+  margin-left: 6rem;
+}
+
+.active {
+  border-bottom: 2px solid #d0d6f9;
+}

@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;300;400;600&family=Barlow:wght@300&family=Bellefair&display=swap");
+
+.tech {
+  height: 100vh;
+  /* position: relative; */
+  background: url("../../Assets/tech/background-technology-desktop.jpg");
+}
+.tech_heading {
+  position: absolute;
+  top: 17%;
+  left: 15%;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 3px;
+  font-size: 1.4rem;
+}
+.tech_heading span {
+  color: #d0d6f9;
+  opacity: 0.5;
+  font-weight: 400;
+}
+.tech_content {
+  display: flex;
+  gap: 4rem;
+  position: absolute;
+  top: 25%;
+  right: 0%;
+  align-items: center;
+}
+.tech_navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
+}
+.tech_nav {
+  height: 3.2rem;
+  width: 3.2rem;
+  background-color: white;
+  color: #0b0d17;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  border-radius: 50%;
+  cursor: pointer;
+  font-family: "Bellefair", sans-serif;
+  font-weight: 500;
+}

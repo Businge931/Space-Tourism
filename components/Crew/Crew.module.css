@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;300;400;600&family=Barlow:wght@300&family=Bellefair&display=swap");
+
+.crew {
+  height: 100vh;
+  position: relative;
+  background: url("../../Assets/crewpage/background-crew-desktop.jpg");
+  background-position: center;
+}
+.crewContent {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+.crew_heading {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1.4rem;
+  font-family: "Barlow Condensed", sans-serif;
+}
+.crew_heading span {
+  color: #d0d6f9;
+  opacity: 0.5;
+  font-weight: 500;
+}
+.crew_navigation {
+  display: flex;
+  max-width: 8rem;
+  gap: 1rem;
+  position: absolute;
+  top: 75%;
+  left: 10%;
+}
+.nav {
+  height: 0.8rem;
+  width: 0.8rem;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

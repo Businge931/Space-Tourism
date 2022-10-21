@@ -1,0 +1,24 @@
+.destination {
+  height: 100vh;
+  position: relative;
+  background: url("../../Assets/home page/background-destination-desktop.jpg");
+}
+.destinationContent {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+.destination_heading {
+  position: absolute;
+  top: 17%;
+  left: 15%;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+.destination_heading span {
+  color: #d0d6f9;
+  opacity: 0.5;
+  font-weight: 500;
+}
