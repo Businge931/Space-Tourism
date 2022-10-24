@@ -4,7 +4,6 @@
   color: #d0d6f9;
   display: flex;
   align-items: center;
-  top: 5%;
   margin-top: 1.2rem;
   justify-content: space-between;
   z-index: 10;
@@ -67,4 +66,39 @@
 
 .active {
   border-bottom: 2px solid #d0d6f9;
+}
+
+/* **********  MEDIA QUERIES  ********** */
+
+@media (max-width: 768px) {
+  .header {
+    margin: 0;
+  }
+  .header_logo {
+    height: 2.2rem;
+    width: 2.2rem;
+    transform: translateY(5px);
+  }
+  .link {
+    font-size: 0.8rem;
+  }
+  .link span {
+    display: none;
+  }
+  .header_links {
+    height: 2.4rem;
+    gap: 2rem;
+  }
+  #home {
+    margin-left: 2rem;
+  }
+  .header_line {
+    display: none;
+  }
+}
+/* *****    MOBILE */
+@media (max-width: 425px) {
+  .header {
+    display: none;
+  }
 }

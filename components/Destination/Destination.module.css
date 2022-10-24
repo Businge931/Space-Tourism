@@ -1,12 +1,10 @@
 .destination {
   height: 100vh;
-  position: relative;
-  background: url("../../Assets/home page/background-destination-desktop.jpg");
+  width: 100vw;
+  background: url("../../Assets/destination/background-destination-desktop.jpg");
 }
 .destinationContent {
-  position: absolute;
-  top: 30%;
-  left: 10%;
+  padding: 12rem 16rem 0 10rem;
 }
 .destination_heading {
   position: absolute;
@@ -21,4 +19,15 @@
   color: #d0d6f9;
   opacity: 0.5;
   font-weight: 500;
+}
+
+/* *******MEDIA QUERIES *********** */
+@media (max-width: 768px) {
+  .destination_heading {
+    font-size: 1rem;
+    top: 14%;
+  }
+  .destinationContent {
+    padding: 6rem;
+  }
 }

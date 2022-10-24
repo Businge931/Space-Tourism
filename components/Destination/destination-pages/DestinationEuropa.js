@@ -1,5 +1,5 @@
 import DestinationContent from "../DestinationContent";
-import europa from "../../../Assets/home page/image-europa.png";
+import europa from "../../../Assets/destination/image-europa.png";
 const DestinationEuropa = () => {
   return (
     <DestinationContent

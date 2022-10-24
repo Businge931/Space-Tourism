@@ -1,26 +1,28 @@
-import Image from "next/image";
+import Image from "next/future/image";
 import classes from "./DestinationContent.module.css";
 import Link from "next/link";
 
 const DestinationContent = (props) => {
-  const { destinationPath, heading, distance, time, content } = props;
+  const { destinationPath, heading, distance, time, content, height, width } =
+    props;
+
   return (
     <article className={classes.article}>
-      <Image src={destinationPath} alt="moon" className={classes.moon} />
+      <Image src={destinationPath} alt="moon" className={classes.image} />
       <div className={classes.article_content}>
         <nav className={classes.article_links}>
-          <nav className={classes.link}>
-            <Link href="/destination">moon</Link>
-          </nav>
-          <nav className={classes.link}>
-            <Link href="/destination/mars">mars</Link>
-          </nav>
-          <nav className={classes.link}>
-            <Link href="/destination/europa">Europa</Link>
-          </nav>
-          <nav className={classes.link}>
-            <Link href="/destination/titan">titan</Link>
-          </nav>
+          <Link href="/destination">
+            <nav className={classes.link}>moon</nav>
+          </Link>
+          <Link href="/destination/mars">
+            <nav className={classes.link}>mars</nav>
+          </Link>
+          <Link href="/destination/europa">
+            <nav className={classes.link}>Europa</nav>
+          </Link>
+          <Link href="/destination/titan">
+            <nav className={classes.link}>titan</nav>
+          </Link>
         </nav>
         <h2 className={classes.article_heading}>{heading}</h2>
         <p className={classes.article_blockParagraph}>{content}</p>

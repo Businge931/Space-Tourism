@@ -1,5 +1,5 @@
 import DestinationContent from "../DestinationContent";
-import titan from "../../../Assets/home page/image-titan.png";
+import titan from "../../../Assets/destination/image-titan.png";
 const DestinationTitan = () => {
   return (
     <DestinationContent

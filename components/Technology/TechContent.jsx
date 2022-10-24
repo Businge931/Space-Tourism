@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./TechContent.module.css";
-import Image from "next/image";
+import Image from "next/future/image";
 
 const TechContent = (props) => {
   const { title, description, image } = props;
@@ -12,7 +12,7 @@ const TechContent = (props) => {
         <h2 className={classes.article_h2}>{title}</h2>
         <p className={classes.article_paragraph}>{description}</p>
       </div>
-      <Image src={image} height={450} width={500} />
+      <Image src={image} className={classes.image} />
     </article>
   );
 };

@@ -1,7 +1,7 @@
 import classes from "./Header.module.css";
 import logo from "../../Assets/Path.png";
 import Link from "next/link";
-import Image from "next/image";
+import Image from "next/future/image";
 
 const Header = () => {
   // const activeState=

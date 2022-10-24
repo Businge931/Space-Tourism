@@ -1,13 +1,8 @@
-import Header from "../Header/Header";
 import classes from "./Home.module.css";
 
 const Home = () => {
   return (
     <main className={classes.home}>
-      <div className={classes.header}>
-        <Header />
-      </div>
-
       <div className={classes.main_content}>
         <h4 className={classes.home_h4}>SO, YOU WANT TO TRAVEL TO</h4>
         <h1 className={classes.home_h1}>space</h1>

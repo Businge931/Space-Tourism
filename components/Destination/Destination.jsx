@@ -1,6 +1,4 @@
-import DestinationContent from "./DestinationContent";
 import classes from "./Destination.module.css";
-import DestinationMars from "../Destination/destination-pages/DestinationMars";
 
 const Destination = ({ children }) => {
   return (

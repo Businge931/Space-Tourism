@@ -2,45 +2,17 @@
 
 .crew {
   height: 100vh;
-  position: relative;
   background: url("../../Assets/crewpage/background-crew-desktop.jpg");
-  background-position: center;
+  background-position: center center;
+  background-size: cover;
 }
 .crewContent {
-  position: absolute;
-  top: 30%;
-  left: 10%;
+  padding: 7.8rem 10rem 0 10rem;
 }
-.crew_heading {
-  position: absolute;
-  top: 20%;
-  left: 10%;
-  font-weight: 100;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 1.4rem;
-  font-family: "Barlow Condensed", sans-serif;
-}
-.crew_heading span {
-  color: #d0d6f9;
-  opacity: 0.5;
-  font-weight: 500;
-}
-.crew_navigation {
-  display: flex;
-  max-width: 8rem;
-  gap: 1rem;
-  position: absolute;
-  top: 75%;
-  left: 10%;
-}
-.nav {
-  height: 0.8rem;
-  width: 0.8rem;
-  border-radius: 50%;
-  background-color: white;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+/******* MEDIA QUERIES ******/
+@media (max-width: 784px) {
+  .crewContent {
+    padding: 5rem 2rem 0 2rem;
+  }
 }

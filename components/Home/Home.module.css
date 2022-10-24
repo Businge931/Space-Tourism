@@ -2,18 +2,19 @@
 
 .home {
   height: 100vh;
-  position: relative;
-  background: url("../../Assets/home page/background-home-desktop.jpg");
+  padding: 10rem 15rem;
+  background: url("../../Assets/homepage/background-home-desktop.jpg"),
+    linear-gradient(#0b0d17a9, #090a113b);
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 }
-.header {
-  position: absolute;
-  width: 100%;
-}
+
 .main_content {
   max-width: 25rem;
-  position: absolute;
-  top: 40%;
-  left: 10%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -40,11 +41,8 @@
   color: #d0d6f9;
 }
 .explore {
-  position: absolute;
-  top: 50%;
-  right: 20%;
-  height: 10rem;
-  width: 10rem;
+  height: 11rem;
+  width: 11rem;
   background-color: white;
   border-radius: 50%;
   display: flex;
@@ -63,4 +61,36 @@
   text-transform: uppercase;
   font-size: 1.3rem;
   font-family: "Bellefair", sans-serif;
+}
+
+/* *******   MEDIA QUERIES   ********** */
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    align-items: center;
+    background: url("../../Assets//homepage//background-home-tablet.jpg"),
+      linear-gradient(#0b0d17a9, #090a113b);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 8rem;
+    gap: 3rem;
+    height: 100%;
+  }
+  .home_h1 {
+    font-size: 4rem;
+  }
+  .main_content {
+    align-items: center;
+  }
+  .home_content {
+    text-align: center;
+  }
+  .explore {
+    height: 8rem;
+    width: 8rem;
+  }
+  .explore_h4 {
+    font-size: 1rem;
+  }
 }

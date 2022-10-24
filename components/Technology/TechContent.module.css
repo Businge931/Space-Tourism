@@ -10,6 +10,9 @@
   display: flex;
   flex-direction: column;
 }
+.image {
+  height: 28rem;
+}
 .article_h5 {
   font-weight: 100;
   font-size: 1.1rem;
@@ -30,4 +33,33 @@
   line-height: 27px;
   color: #d0d6f9;
   font-family: "Barlow", sans-serif;
+}
+
+/* ****MEDIA QUERIES ****** */
+@media (max-width: 768px) {
+  .article {
+    flex-direction: column-reverse;
+    width: 100%;
+    gap: 1rem;
+  }
+  .image {
+    width: 100%;
+    height: auto;
+  }
+  .article_content {
+    max-width: 50%;
+    align-items: center;
+  }
+  .article_h5 {
+    font-size: 1rem;
+  }
+  .article_h2 {
+    font-size: 1.4rem;
+    padding-bottom: 0.5rem;
+  }
+  .article_paragraph {
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 20px;
+  }
 }
