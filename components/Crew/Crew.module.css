@@ -7,12 +7,37 @@
   background-size: cover;
 }
 .crewContent {
-  padding: 7.8rem 10rem 0 10rem;
+  padding: 7.5rem 10rem 0 10rem;
 }
 
 /******* MEDIA QUERIES ******/
-@media (max-width: 784px) {
+
+/* MOBILE */
+@media (min-width: 320px) and (max-width: 425px) {
+  .crew {
+    background: url("../../Assets/crewpage/background-crew-mobile.jpg");
+    background-position: bottom center;
+  }
   .crewContent {
-    padding: 5rem 2rem 0 2rem;
+    padding: 5em 1em 0 1em;
+  }
+}
+
+/* TABLET */
+@media (min-width: 425px) and (max-width: 768px) {
+  .crew {
+    background: url("../../Assets/crewpage/background-crew-tablet.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .crewContent {
+    padding: 5em 2em 0 2em;
+  }
+}
+
+/* LAPTOP-SMALL */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .crewContent {
+    padding: 8em 0 0 3em;
   }
 }

@@ -1,4 +1,5 @@
 import classes from "./Home.module.css";
+import Link from "next/link";
 
 const Home = () => {
   return (
@@ -13,10 +14,11 @@ const Home = () => {
           experience!
         </p>
       </div>
-
-      <div className={classes.explore}>
-        <h4 className={classes.explore_h4}>explore</h4>
-      </div>
+      <Link href="/destination">
+        <div className={classes.explore}>
+          <h4 className={classes.explore_h4}>explore</h4>
+        </div>
+      </Link>
     </main>
   );
 };

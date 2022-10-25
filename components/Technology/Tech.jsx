@@ -1,8 +1,15 @@
 import classes from "./Tech.module.css";
-import TechContent from "./TechContent";
 import Link from "next/link";
 
+import { useState } from "react";
+
 const Tech = ({ children }) => {
+  const [isActive, setIsActive] = useState(false);
+
+  const handleActiveState = () => {
+    setIsActive(!isActive);
+  };
+
   return (
     <main className={classes.tech}>
       <h2 className={classes.tech_heading}>
@@ -11,7 +18,10 @@ const Tech = ({ children }) => {
       <div className={classes.tech_content}>
         <div className={classes.tech_navigation}>
           <Link href="/technology">
-            <nav className={classes.tech_nav}>
+            <nav
+              className={isActive ? classes.activeclass : classes.tech_nav}
+              onClick={handleActiveState}
+            >
               <p>1</p>
             </nav>
           </Link>
