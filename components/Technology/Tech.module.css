@@ -2,6 +2,7 @@
 
 .tech {
   height: 100vh;
+  width: 100vw;
   background: url("../../Assets/tech/background-technology-desktop.jpg");
 }
 .tech_heading {
