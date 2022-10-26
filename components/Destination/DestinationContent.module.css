@@ -2,7 +2,7 @@
 
 .article {
   display: flex;
-  gap: 6rem;
+  justify-content: space-between;
 }
 .image {
   height: 25rem;
@@ -27,10 +27,12 @@
   font-family: "Barlow Condensed", sans-serif;
   cursor: pointer;
 }
-.link:hover,
-.link:active {
+.link:hover {
   border-bottom: 2px solid white;
   color: white;
+}
+.active {
+  border-bottom: 2px solid #d0d6f9;
 }
 
 .article_heading {

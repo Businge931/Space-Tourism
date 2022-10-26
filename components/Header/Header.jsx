@@ -1,13 +1,20 @@
-// import { useState } from "react";
+import { useRouter } from "next/router";
 import classes from "./Header.module.css";
 import logo from "../../Assets/Path.png";
 import Link from "next/link";
 import Image from "next/future/image";
-import useWindowDimensions from "../../Hooks/windowSize";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const Header = () => {
-  const { width } = useWindowDimensions();
+  const router = useRouter();
+
+  // const nestedDestination =
+  //   (router.pathname === "/destination" &&
+  //     router.pathname === "/destination/moon" &&
+  //     router.pathname === "/destination/mars") ||
+  //   router.pathname === "/destination/europa" ||
+  //   router.pathname === "/destination/titan";
+
   return (
     <header className={classes.header}>
       <div className={classes.header_logo}>
@@ -18,28 +25,46 @@ const Header = () => {
 
       <nav className={classes.header_links}>
         <Link href="/">
-          <div className={classes.link} id={classes.home}>
+          <div
+            className={`${classes.link} ${
+              router.pathname == "/" ? classes.active : ""
+            }`}
+            id={classes.home}
+          >
             <a>
               <span>00</span> Home
             </a>
           </div>
         </Link>
         <Link href="/destination">
-          <div className={classes.link}>
+          <div
+            className={`${classes.link} ${
+              router.pathname == "/destination" ? classes.active : ""
+            }`}
+          >
             <a>
               <span>01</span> Destination
             </a>
           </div>
         </Link>
         <Link href="/crew">
-          <div className={classes.link}>
+          <div
+            className={`${classes.link} ${
+              router.pathname == "/crew" ? classes.active : ""
+            }`}
+          >
             <a>
               <span>03</span> Crew
             </a>
           </div>
         </Link>
         <Link href="/technology">
-          <div className={classes.link}>
+          <div
+            className={`${classes.link} ${
+              router.pathname == "/technology" ? classes.active : ""
+            }`}
+            id={classes.technology}
+          >
             <a>
               <span>04</span> Technology
             </a>

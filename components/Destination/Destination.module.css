@@ -4,11 +4,11 @@
   background: url("../../Assets/destination/background-destination-desktop.jpg");
 }
 .destinationContent {
-  padding: 12rem 16rem 0 10rem;
+  padding: 230px 165px 0 165px;
 }
 .destination_heading {
   position: absolute;
-  top: 17%;
+  top: 25%;
   left: 15%;
   font-weight: 100;
   text-transform: uppercase;

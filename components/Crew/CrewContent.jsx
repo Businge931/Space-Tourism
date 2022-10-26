@@ -1,10 +1,12 @@
 import classes from "./CrewContent.module.css";
 import Image from "next/future/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const CrewContent = (props) => {
   const { title, name, about, image } = props;
 
+  const router = useRouter();
   return (
     <article id={classes.article}>
       <h2 className={classes.crew_heading}>
@@ -18,16 +20,36 @@ const CrewContent = (props) => {
 
           <div className={classes.crew_navigation}>
             <Link href="/crew">
-              <nav className={classes.nav} />
+              <nav
+                className={`${classes.nav} ${
+                  router.pathname == "/crew" ? classes.active : ""
+                }`}
+              />
             </Link>
             <Link href="/crew/missionSpecialist">
-              <nav className={classes.nav} />
+              <nav
+                className={`${classes.nav} ${
+                  router.pathname == "/crew/missionSpecialist"
+                    ? classes.active
+                    : ""
+                }`}
+              />
             </Link>
             <Link href="/crew/pilot">
-              <nav className={classes.nav} />
+              <nav
+                className={`${classes.nav} ${
+                  router.pathname == "/crew/pilot" ? classes.active : ""
+                }`}
+              />
             </Link>
             <Link href="/crew/flightEngineer">
-              <nav className={classes.nav} />
+              <nav
+                className={`${classes.nav} ${
+                  router.pathname == "/crew/flightEngineer"
+                    ? classes.active
+                    : ""
+                }`}
+              />
             </Link>
           </div>
         </div>

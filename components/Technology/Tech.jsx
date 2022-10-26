@@ -1,14 +1,9 @@
 import classes from "./Tech.module.css";
 import Link from "next/link";
-
-import { useState } from "react";
+import { useRouter } from "next/router";
 
 const Tech = ({ children }) => {
-  const [isActive, setIsActive] = useState(false);
-
-  const handleActiveState = () => {
-    setIsActive(!isActive);
-  };
+  const router = useRouter();
 
   return (
     <main className={classes.tech}>
@@ -19,19 +14,30 @@ const Tech = ({ children }) => {
         <div className={classes.tech_navigation}>
           <Link href="/technology">
             <nav
-              className={isActive ? classes.activeclass : classes.tech_nav}
-              onClick={handleActiveState}
+              className={`${classes.tech_nav} ${
+                router.pathname == "/technology" ? classes.active : ""
+              }`}
             >
               <p>1</p>
             </nav>
           </Link>
           <Link href="/technology/spaceport">
-            <nav className={classes.tech_nav}>
+            <nav
+              className={`${classes.tech_nav} ${
+                router.pathname == "/technology/spaceport" ? classes.active : ""
+              }`}
+            >
               <p>2</p>
             </nav>
           </Link>
           <Link href="/technology/spacecapsule">
-            <nav className={classes.tech_nav}>
+            <nav
+              className={`${classes.tech_nav} ${
+                router.pathname == "/technology/spacecapsule"
+                  ? classes.active
+                  : ""
+              }`}
+            >
               <p>3</p>
             </nav>
           </Link>
