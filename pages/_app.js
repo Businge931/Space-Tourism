@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-// import Header from "../components/Header/Header";
 import "../styles/globals.css";
 import Head from "next/head";
 
-import MyHeader from "../components/Link/Header";
-import MobileDrawer from "../components/Link/MobileDrawer";
-import OverLay from "../components/Link/OverLay";
+import Header from "../components/Header/Header";
+import MobileDrawer from "../components/Header/MobileDrawer";
+import OverLay from "../components/Header/OverLay";
 
 function MyApp({ Component, pageProps }) {
   const [show, setShow] = useState(false);
@@ -23,8 +22,7 @@ function MyApp({ Component, pageProps }) {
       )}
 
       <div className="header">
-        <MyHeader setShow={setShow} />
-        {/* <Header /> */}
+        <Header setShow={setShow} />
       </div>
       <Component {...pageProps} />
     </div>

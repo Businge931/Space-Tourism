@@ -42,3 +42,6 @@
   color: white;
   font-weight: bold;
 }
+.active {
+  border-bottom: 2px solid white;
+}
