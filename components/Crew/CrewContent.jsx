@@ -20,14 +20,14 @@ const CrewContent = (props) => {
 
           <div className={classes.crew_navigation}>
             <Link href="/crew">
-              <nav
+              <a
                 className={`${classes.nav} ${
                   router.pathname == "/crew" ? classes.active : ""
                 }`}
               />
             </Link>
             <Link href="/crew/missionSpecialist">
-              <nav
+              <a
                 className={`${classes.nav} ${
                   router.pathname == "/crew/missionSpecialist"
                     ? classes.active
@@ -36,14 +36,14 @@ const CrewContent = (props) => {
               />
             </Link>
             <Link href="/crew/pilot">
-              <nav
+              <a
                 className={`${classes.nav} ${
                   router.pathname == "/crew/pilot" ? classes.active : ""
                 }`}
               />
             </Link>
             <Link href="/crew/flightEngineer">
-              <nav
+              <a
                 className={`${classes.nav} ${
                   router.pathname == "/crew/flightEngineer"
                     ? classes.active

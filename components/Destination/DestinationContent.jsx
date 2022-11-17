@@ -14,40 +14,40 @@ const DestinationContent = (props) => {
       <div className={classes.article_content}>
         <nav className={classes.article_links}>
           <Link href="/destination">
-            <nav
+            <a
               className={`${classes.link} ${
                 router.pathname == "/destination" ? classes.active : ""
               }`}
             >
               moon
-            </nav>
+            </a>
           </Link>
           <Link href="/destination/mars">
-            <nav
+            <a
               className={`${classes.link} ${
                 router.pathname == "/destination/mars" ? classes.active : ""
               }`}
             >
               mars
-            </nav>
+            </a>
           </Link>
           <Link href="/destination/europa">
-            <nav
+            <a
               className={`${classes.link} ${
                 router.pathname == "/destination/europa" ? classes.active : ""
               }`}
             >
               Europa
-            </nav>
+            </a>
           </Link>
           <Link href="/destination/titan">
-            <nav
+            <a
               className={`${classes.link} ${
                 router.pathname == "/destination/titan" ? classes.active : ""
               }`}
             >
               titan
-            </nav>
+            </a>
           </Link>
         </nav>
         <h2 className={classes.article_heading}>{heading}</h2>

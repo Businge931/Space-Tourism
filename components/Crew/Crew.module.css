@@ -17,10 +17,12 @@
 @media (min-width: 320px) and (max-width: 425px) {
   .crew {
     background: url("../../Assets/crewpage/background-crew-mobile.jpg");
-    background-position: bottom center;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .crewContent {
-    padding: 5em 1em 0 1em;
+    padding: 8em 1em 0 1em;
   }
 }
 

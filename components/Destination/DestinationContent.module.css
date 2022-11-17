@@ -87,17 +87,17 @@
     gap: 0.4em;
   }
   .image {
-    height: 7em;
-    width: 7em;
+    height: 12em;
+    width: 12em;
   }
   .article_links {
     gap: 1.4em;
   }
   .article_heading {
-    font-size: 3em;
+    font-size: 4em;
   }
   .article_content {
-    gap: 0;
+    gap: 0.5em;
   }
   .article_blockParagraph {
     font-size: 1rem;
@@ -105,10 +105,10 @@
   }
   .article_units {
     flex-direction: column;
-    gap: 0.8em;
+    gap: 1em;
   }
   .distance_number {
-    font-size: 1.2em;
+    font-size: 1.6em;
   }
 }
 

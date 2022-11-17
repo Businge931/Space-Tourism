@@ -66,18 +66,18 @@
     background-size: cover;
   }
   .tech_heading {
-    font-size: 0.8rem;
-    top: 8%;
+    font-size: 1.2rem;
+    top: 10%;
     left: 25%;
   }
   .tech_content {
-    padding: 5em 0 0 0;
+    padding: 8em 0 0 0;
     flex-direction: column;
   }
   .tech_navigation {
     flex-direction: row;
     position: absolute;
-    top: 50%;
+    top: 45%;
     gap: 1em;
   }
   .tech_nav {

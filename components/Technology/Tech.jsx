@@ -13,33 +13,33 @@ const Tech = ({ children }) => {
       <div className={classes.tech_content}>
         <div className={classes.tech_navigation}>
           <Link href="/technology">
-            <nav
+            <a
               className={`${classes.tech_nav} ${
                 router.pathname == "/technology" ? classes.active : ""
               }`}
             >
-              <p>1</p>
-            </nav>
+              1
+            </a>
           </Link>
           <Link href="/technology/spaceport">
-            <nav
+            <a
               className={`${classes.tech_nav} ${
                 router.pathname == "/technology/spaceport" ? classes.active : ""
               }`}
             >
-              <p>2</p>
-            </nav>
+              2
+            </a>
           </Link>
           <Link href="/technology/spacecapsule">
-            <nav
+            <a
               className={`${classes.tech_nav} ${
                 router.pathname == "/technology/spacecapsule"
                   ? classes.active
                   : ""
               }`}
             >
-              <p>3</p>
-            </nav>
+              3
+            </a>
           </Link>
         </div>
         <div className={classes.tech_content__container}>{children}</div>

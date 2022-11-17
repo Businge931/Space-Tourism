@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;300;400;600&family=Bellefair&display=swap");
+
+.drawer_wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  inset: 0 0 0 30%;
+  z-index: 9999;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(40.7742px);
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
+  padding: 32px 0;
+}
+
+.drawer_wrapper.show {
+  transform: translateX(0%);
+}
+.overlay_wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  inset: 0 70% 0 0;
+  z-index: 9999;
+  background: transparent;
+}
+
+.mobile_drawer_close_btn {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+  padding-right: 32px;
+}
+
+.mobile_nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  list-style: none;
+  padding-top: 3rem;
+  padding-left: 32px;
+  width: 100%;
+  font-weight: 200;
+  font-family: "Barlow Condensed", sans-serif;
+}
+.link {
+  width: 100%;
+  height: auto;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+}
+.link span {
+  font-weight: 400;
+}
+
+.active {
+  border-right: 5px solid white;
+  font-weight: 400;
+}

@@ -17,7 +17,7 @@
   max-width: 450px;
 }
 .home_h4 {
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 400;
   letter-spacing: 4.72px;
   font-family: "Barlow Condensed", sans-serif;
@@ -25,11 +25,10 @@
   padding-bottom: 24px;
 }
 .home_h1 {
-  font-size: 150px;
-  letter-spacing: 15px;
+  font-size: 140px;
+  letter-spacing: 14px;
   text-transform: uppercase;
   font-weight: 400;
-  line-height: 171.9px;
   font-family: "Bellefair", sans-serif;
 }
 .home_content {
@@ -69,22 +68,37 @@
 /* MOBILE */
 @media (min-width: 320px) and (max-width: 425px) {
   .home {
-    /* background: url("../../Assets/homepage/background-home-mobile.jpg"); */
-    padding: 4em 1em 0 1em;
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    background-size: contain;
+    background: url("../../Assets/homepage/background-home-mobile.jpg");
+    padding: 0 1em;
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
   }
+
   .home_h4 {
-    font-size: 0.8em;
+    font-size: 15px;
+    padding-bottom: 0;
+    text-align: center;
+  }
+  .home_h1 {
+    font-size: 80px;
+    letter-spacing: 0;
+    text-align: center;
   }
   .home_content {
-    font-size: 0.9em;
-    letter-spacing: 1px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    line-height: 28px;
+    text-align: center;
   }
   .explore {
-    height: 6em;
-    width: 6em;
+    height: 150px;
+    width: 150px;
+  }
+  .explore_h4 {
+    font-size: 1.4em;
   }
 }
 
@@ -98,7 +112,7 @@
     background-position: center;
     background-size: cover;
     padding: 4em 0 0 0;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
   .home_h1 {
     font-size: 4em;
@@ -120,10 +134,9 @@
 
 /* LAPTOP-SMALL */
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   .home {
     padding: 6em 4em;
     gap: 2em;
-    /* width: 100%; */
   }
-}
+} */
